@@ -2,7 +2,7 @@
   "name": "quasar-app",
   "version": "0.0.1",
   "description": "A Quasar Network Portfolio App",
-  "productName": "Maria-Portfolio",
+  "productName": "Maria's Portfolio",
   "cordovaId": "org.cordova.quasar.app",
   "capacitorId": "",
   "author": "Maria Bogomaz <bogomazm@gmail.com>",

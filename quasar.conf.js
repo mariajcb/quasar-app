@@ -99,7 +99,7 @@ module.exports = function (ctx) {
       workboxOptions: {}, // only for GenerateSW
       manifest: {
         name: 'Maria-Portfolio',
-        short_name: 'Maria-Portfolio',
+        short_name: 'Portfolio',
         description: 'A Quasar Network Portfolio App',
         display: 'standalone',
         orientation: 'portrait',
