@@ -7,10 +7,10 @@
           <q-btn flat label="MARIA BOGOMAZ" size="xl" :ripple="{ center: true }"/>
         </q-toolbar-title>
         <q-tabs>
-          <q-tab label="Portfolio" :ripple="{ center: true }" />
-          <q-tab label="Resume" :ripple="{ center: true }" />
-          <q-tab label="About" :ripple="{ center: true }" />
-          <q-tab label="Contact" :ripple="{ center: true }" />
+          <q-tab label="Portfolio" @click="scrollTo('portfolio')" :ripple="{ center: true }" />
+          <q-tab label="Resume" @click="scrollTo('resume')" :ripple="{ center: true }" />
+          <q-tab label="About" @click="scrollTo('about')" :ripple="{ center: true }" />
+          <q-tab label="Contact" @click="scrollTo('contact')" :ripple="{ center: true }" />
         </q-tabs>
       </q-toolbar>
     </q-header>
@@ -32,6 +32,12 @@ export default {
   data () {
     return {
       leftDrawerOpen: false
+    }
+  },
+
+  methods: {
+    scrollTo (id) {
+      document.getElementById(id).scrollIntoView({ block: 'end', behavior: 'smooth' })
     }
   }
 }
