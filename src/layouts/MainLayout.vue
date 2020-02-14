@@ -1,14 +1,17 @@
 <template>
   <q-layout view="hHh lpR fFf">
 
-    <q-header bordered class="bg-primary text-white">
+    <q-header bordered class="bg-primary text-white" height-hint="98">
       <q-toolbar>
         <q-toolbar-title>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
-          </q-avatar>
-          Title
+          <q-btn flat label="MARIA BOGOMAZ" size="xl" :ripple="{ center: true }"/>
         </q-toolbar-title>
+        <q-tabs>
+          <q-tab label="Portfolio" :ripple="{ center: true }" />
+          <q-tab label="Resume" :ripple="{ center: true }" />
+          <q-tab label="About" :ripple="{ center: true }" />
+          <q-tab label="Contact" :ripple="{ center: true }" />
+        </q-tabs>
       </q-toolbar>
     </q-header>
 
